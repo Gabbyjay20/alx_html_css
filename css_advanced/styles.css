@@ -1,9 +1,15 @@
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-        url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e') no-repeat center center/cover;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e') no-repeat center center/cover;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -14,41 +20,57 @@ header {
     padding: 20px 50px;
 }
 
-header .logo {
-    font-weight: bold;
-    font-size: 18px;
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-header nav a {
+header ul li {
     margin-left: 20px;
+}
+
+header ul li.logo img {
+    width: 40px;
+    height: auto;
+}
+
+header a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #a64dff;
 }
 
 /* Hero Section */
-.hero {
+main article {
     text-align: center;
     padding: 100px 20px 50px;
 }
 
-.hero h1 {
+main article h1 {
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.hero .tags {
+.tags {
     margin-bottom: 20px;
 }
 
-.hero .tags span {
+.tags span {
     margin: 0 10px;
     font-size: 16px;
     font-weight: 500;
 }
 
-.hero .btn {
+.btn {
+    display: inline-block;
     background: #e600ff;
     color: white;
     padding: 12px 30px;
@@ -56,6 +78,11 @@ header nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #a64dff;
 }
 
 .subtext {
@@ -67,7 +94,7 @@ header nav a {
     color: #a64dff;
 }
 
-/* Profiles */
+/* Profiles Section */
 .profiles {
     display: flex;
     justify-content: center;
@@ -85,6 +112,7 @@ header nav a {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 15px;
+    border: 3px solid #fff;
 }
 
 .profile h3 {
@@ -95,4 +123,21 @@ header nav a {
 .profile p {
     font-size: 12px;
     color: #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+footer a {
+    color: #a64dff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
