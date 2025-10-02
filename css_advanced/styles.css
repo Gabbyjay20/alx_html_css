@@ -25,16 +25,17 @@ header .logo {
     font-size: 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+nav a {
+    color: aliceblue;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-nav ul li {
-    color: aliceblue;
-    cursor: pointer;
-    font-size: 14px;
+nav a:hover {
+    color: #d633ff;
 }
 
 .hero {
@@ -49,7 +50,8 @@ nav ul li {
 
 .hero .tags {
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 13px;
+    margin-left: 0 15px;
     letter-spacing: 2px;
 }
 
@@ -58,14 +60,19 @@ nav ul li {
     border: none;
     padding: 12px 30px;
     border-radius: 25px;
-    color: white;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero button:hover {
     background: #a020f0;
+}
+
+.hero button a {
+    text-decoration: none;
+    color: white;
 }
 
 .subtext {
@@ -108,19 +115,52 @@ nav ul li {
     color: #ccc;
 }
 
-.btn,
-a {
-    text-decoration: none;
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #a64bf4;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    ;
+}
+
+.testimonial-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-text {
+    max-width: 600px;
+}
+
+.testimonial-text p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-text .name {
+    font-weight: bold;
+}
+
+.testimonial-text .role {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.tags {
+    font-size: 30px;
 }
 
 a {
-    text-decoration: none;
-    margin: 20px;
-}
-
-.highlight {
-    color: #d633ff;
+    font-size: larger;
 }
