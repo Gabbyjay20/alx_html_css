@@ -1,0 +1,113 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.highlight {
+  color: #e0da38;
+}
+
+nav {
+  background-color: #2b2a2a;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #e0da38;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about, .resources {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.about {
+  flex: 2;
+}
+
+.resources {
+  flex: 1;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.text {
+  flex: 2;
+}
+
+.profile img {
+  width: 150px;
+  border-radius: 6px;
+}
+
+.flag-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.flag-section img {
+  width: 80px;
+  border: 1px solid #ccc;
+}
+
+.resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources li {
+  margin-bottom: 8px;
+}
+
+.resources a {
+  text-decoration: none;
+  color: purple;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.last-mod {
+  color: #f0db4f;
+}
